@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row align-items-center">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ANO</th>
+          <th scope="col">MES</th>
+          <th scope="col">DIA</th>
+          <th scope="col">VENDAS</th>
+         
+        </tr>
+      </thead>
+      <tbody id='corpo'>
+        <tr>
+          <th scope="row">20</th>
+          <td>SETEMBRO</td>
+          <td>28</td> 
+          <td>5.000,00</td>
+        </tr>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+  document.getElementById('corpo').innerHTML=financeiro().map((e)=>{
+    return(
+      `
+      <tr>
+          <th scope="row">${e.ano}</th>
+          <td>${e.mes}</td>
+          <td>${e.dia}</td> 
+          <td>${e.vendas}</td>
+        </tr>
+      `
+    )
+  })
+</script>

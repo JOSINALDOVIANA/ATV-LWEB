@@ -1,3 +1,16 @@
 body{
-    /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
+    background: #352d55;
 }
+#cont{
+    /* height: auto; 
+    width: auto;
+    background-color: #1c143d; 
+    display:flex;
+     flex-direction: column;
+     align-items: center;
+     align-content: center; */
+     
+}
+    
